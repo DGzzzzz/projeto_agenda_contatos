@@ -11,12 +11,12 @@ let linhas = '';
             const inputNome = document.getElementById('Nome');
             const inputNumero = document.getElementById('Numero');
 
-            if (Contato.includes(inputNome.value)){
-                alert(`O contato: ${inputNome.value} já foi inserido`);
+            if (Fone.includes(inputNumero.value)){
+                alert(`O contato: ${inputNome.value} com o numero: ${inputNumero.value} já foi inserido`);
             } else {
                 
                 Contato.push(inputNome.value);
-                Fone.push(parseFloat(inputNumero.value));
+            Fone.push(inputNumero.value);
                 
                 let linha = '<tr>';
             linha += `<td>${inputNome.value}</td>`;
